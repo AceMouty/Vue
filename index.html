@@ -11,16 +11,22 @@
 <body>
     <div id="vue-app">
         <h1>{{ topic }}</h1>
-        <!-- Binding data to elements using **v-bind** directive -->
-        <a v-bind:href="website" target="_blank">The NetNinja</a><br>
-        <input type="text" v-bind:value="name">
+        <p>My age is {{ age }}</p>
 
         <!-- 
-            Add in some dynamic HTML using the v-html directive 
-            this will append html into the tag that holds the v-html
-            directive
+            listen for click event, and call event handler in Vue instance 
+
+            it is valid to use both v-on: and @, they are the same thing
         -->
-        <p v-html="websiteTag"></p>
+        <button @click="addYear(1)">Add Year</button>
+        <button v-on:click="subtractYear(1)">Subtract Year</button><br>
+        <button v-on:click="addYear(10)">Add 10 Years</button>
+        <button v-on:click="subtractYear(10)">Subtract 10 Years</button><br>
+        <h2>Mouse Cords</h2>
+        <p>Cordinates shown are leative to the container</p>
+        <div id="canvas" @mousemove="updateMouse">
+            {{ x }}, {{ y }}
+        </div>
 
     </div>
 </body>
