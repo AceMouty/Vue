@@ -10,10 +10,18 @@
 </head>
 <body>
     <div id="vue-app">
-        <h1>{{ company }}</h1>
+        <h1>{{ topic }}</h1>
+        <!-- Binding data to elements using **v-bind** directive -->
+        <a v-bind:href="website" target="_blank">The NetNinja</a><br>
+        <input type="text" v-bind:value="name">
 
-        <!-- Calling a method in the Vue instance -->
-        <h2>{{ greeting("evening") }}</h2>
+        <!-- 
+            Add in some dynamic HTML using the v-html directive 
+            this will append html into the tag that holds the v-html
+            directive
+        -->
+        <p v-html="websiteTag"></p>
+
     </div>
 </body>
 </html>

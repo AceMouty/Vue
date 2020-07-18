@@ -1,8 +1,9 @@
-# Data and Methods
+# Data Binding
 
-## Creating methods and accessing properties in the **Data** filed of the Vue instance.
+## using vue directives bind urls and html to the DOM.
 
-- Create a property on the Vue instance called **methods**
-- Have the method take in a string like "morning", "afternoon" etc and return a greeting with the time of day that is passed into the method
-- Access and use fields from the **data** field, on the Vue instacne, in the method you have created
-- Have the method return a string so that its output to the DOM
+- create an **input** and use **v-bind** to bind data to the value attribute of the tag
+- create an "a" tag and bind a url from the vue instance to the tags href
+- create a "p" tage and inject html into the tag with v-html
+
+All of the data that is bound should come from the data property in the Vue instance

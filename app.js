@@ -8,8 +8,9 @@ new Vue({
     // that we are bound to
     data: {
         name: "John Doe",
-        job: "Sales Rep",
-        company: "Acme Sales"
+        topic: "Data Binding",
+        website: "http://www.thenetninja.co.uk",
+        websiteTag: '<a href="http://www.thenetninja.co.uk"> The NetNinja From Vue Instance</a>'
     },
 
     methods: {
