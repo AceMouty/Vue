@@ -1,6 +1,8 @@
-# Using a Vue instance and basic data.
+# Data and Methods
 
-- Create a new Vue instance
-- Bind to the div with an id of **vue-app**
-- Create a data attribute as an object and in this object create a name property.
-- Use the name property inside of the **vue-app** element
+## Creating methods and accessing properties in the **Data** filed of the Vue instance.
+
+- Create a property on the Vue instance called **methods**
+- Have the method take in a string like "morning", "afternoon" etc and return a greeting with the time of day that is passed into the method
+- Access and use fields from the **data** field, on the Vue instacne, in the method you have created
+- Have the method return a string so that its output to the DOM
